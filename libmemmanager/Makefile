@@ -1,5 +1,7 @@
 .PHONY: default clean
 
+CFLAGS = -D_XOPEN_SOURCE=700
+
 default: libmemmanager.a
 
 libmemmanager.a: init.o vmm.o logger.o
